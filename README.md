@@ -4,9 +4,11 @@ A comprehensive template for Flutter applications following Clean Architecture p
 
 ## 🏗️ Architecture Overview
 
+> **Note:** For small projects or MVPs, implementing this full architecture might be overengineering. Consider a simpler structure if your project has minimal business logic or a small feature set.
+
 The architecture follows Clean Architecture principles with a feature-first organization:
 
-``` text
+```text
 lib/
 ├── core/               # App-wide utilities, errors, and configurations
 ├── features/          # Feature modules following Clean Architecture
@@ -106,4 +108,8 @@ Pre-configured with best-practice packages:
 
 ## 🤝 Contributing
 
-Contributions are welcome!
+Contributions are welcome.
+
+## 🔗 Social Links
+
+[![X](https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white)](https://x.com/heygourab);
