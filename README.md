@@ -1,55 +1,109 @@
-# Flutter Clean Architecture
+# Flutter Clean Architecture Template
 
-A professional Flutter application demonstrating Clean Architecture principles. This project is designed to be a reference for developers looking to implement Clean Architecture in their own Flutter applications.
+A comprehensive template for Flutter applications following Clean Architecture principles. This template provides a structured foundation with example implementations of each layer.
 
 ## 🏗️ Architecture Overview
 
-The architecture of this project is based on the principles of Clean Architecture, which emphasizes separation of concerns and testability. The project is structured into several layers:
+The architecture follows Clean Architecture principles with a feature-first organization:
 
-- **Presentation Layer**: Contains the UI components and state management.
-- **Domain Layer**: Contains the business logic and use cases.
-- **Data Layer**: Contains the data sources and repositories.
-- **Core Layer**: Contains shared utilities and constants.
-- **Feature Layer**: Contains the feature-specific components, including UI, data sources, and repositories.
-- **Shared Layer**: Contains reusable widgets and models that can be shared across different features.
-
-## 📦 Project Structure
-
-```text
+``` text
 lib/
-├── core/ # App-wide configs, utilities, theme, constants
-├── features/ # Modular feature-based architecture
-├── features/        # Feature-first DDD structure
-│   ├── auth/        # (Example feature module)
-│   │   ├── data/
-│   │   │   ├── datasources/
-│   │   │   ├── models/
-│   │   │   └── repositories/
-│   │   ├── domain/
-│   │   │   ├── entities/
-│   │   │   └── usecases/
-│   │   ├── presentation/    # UI layer (widgets, screens)
-│   │   └── providers/
-│   └── home/ (Example feature module)
-├── shared/ # Reusable widgets, models shared across features
-├── app.dart # Root widget
-├── main.dart # Entry point
-└── router/ # Centralized app routing
+├── core/               # App-wide utilities, errors, and configurations
+├── features/          # Feature modules following Clean Architecture
+│   └── feature_name/  # e.g., auth, home, etc.
+│       ├── data/      # Data layer (repositories impl, models, data sources)
+│       ├── domain/    # Business logic (entities, repositories, use cases)
+│       └── presentation/ # UI layer (screens, widgets)
+|       |__ providers
+└── shared/           # Shared components across features
 ```
 
-### Benefits
+### Key Features
 
-- Clear separation of concerns
-- Testable
-- Maintainable
-- Scalable
+- **✨ Complete Clean Architecture Implementation**
 
-## Contributing
+  - Clear separation between data, domain, and presentation layers
+  - Example implementations for each architectural component
+  - Proper dependency injection setup
 
-Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
-Please ensure that your code adheres to the project's coding standards and includes appropriate tests.
+- **🛠️ Modern Flutter Development**
 
-## Contact
+  - Null safety
+  - Route management with GoRouter
+  - State management with Riverpod
+  - Immutable programming with Freezed
 
-If you have any questions or feedback, feel free to reach out:
-heygourab - [@heygourab](https://x.com/heygourab)
+- **🧰 Built-in Tools**
+  - Error handling infrastructure
+  - Dependency injection setup
+  - Navigation service
+  - Route guards
+
+## 🚀 Getting Started
+
+1. Clone this template
+2. Run `flutter pub get`
+3. Run `flutter pub run build_runner build` to generate code
+4. Start implementing your features following the auth feature example
+
+## 📚 Template Usage Guide
+
+### Adding a New Feature
+
+1. Create a new directory under `lib/features/`
+2. Follow the layer structure:
+   - `domain/` for business logic
+   - `data/` for data handling
+   - `presentation/` for UI
+
+### Implementation Steps
+
+1. **Domain Layer**
+
+   - Define entities
+   - Create repository interfaces
+   - Implement use cases
+
+2. **Data Layer**
+
+   - Create data models (DTOs)
+   - Implement repositories
+   - Set up data sources
+
+3. **Presentation Layer**
+   - Create state management (Riverpod)
+   - Build UI components
+   - Handle navigation
+
+### Example Implementation
+
+The `auth` feature demonstrates:
+
+- Clean Architecture principles
+- Error handling
+- State management
+- Navigation
+- Dependency injection
+
+## 🧪 Testing
+
+The template includes examples of:
+
+- Unit tests for use cases
+- Repository tests
+- Widget tests
+- Integration tests
+
+## 📦 Recommended Dependencies
+
+Pre-configured with best-practice packages:
+
+- `flutter_riverpod` for state management
+- `freezed` for immutable classes
+- `go_router` for navigation
+- `dartz` for functional programming
+- `dio` for networking
+
+## 🤝 Contributing
+
+Contributions are welcome!
