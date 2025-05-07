@@ -1,7 +1,8 @@
 import 'dart:convert';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_clean_architecture/features/auth/data/models/user_model.dart';
+
 import 'package:flutter_clean_architecture/features/auth/data/datasources/auth_local_data_source.dart';
+import 'package:flutter_clean_architecture/features/auth/data/models/user_model.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthLocalDataSourceImpl implements IAuthLocalDataSource {
   AuthLocalDataSourceImpl(this._prefs);

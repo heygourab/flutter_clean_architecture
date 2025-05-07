@@ -1,4 +1,3 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_clean_architecture/features/auth/data/datasources/auth_local_data_source.dart';
 import 'package:flutter_clean_architecture/features/auth/data/datasources/auth_local_data_source_impl.dart';
 import 'package:flutter_clean_architecture/features/auth/data/datasources/auth_remote_data_source.dart';
@@ -6,6 +5,7 @@ import 'package:flutter_clean_architecture/features/auth/data/datasources/auth_r
 import 'package:flutter_clean_architecture/features/auth/data/repositories/auth_repository_impl.dart';
 import 'package:flutter_clean_architecture/features/auth/domain/repositories/auth_repository.dart';
 import 'package:flutter_clean_architecture/features/auth/providers/auth_notifier.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// Template for dependency injection with Riverpod

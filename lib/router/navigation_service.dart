@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:flutter_clean_architecture/router/routes.dart';
+import 'package:go_router/go_router.dart';
 
 abstract final class NavigationService {
   static void push(BuildContext context, String location, {Object? extra}) {
