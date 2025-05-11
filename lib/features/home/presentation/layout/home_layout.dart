@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class HomeLayout extends StatelessWidget {
-
   const HomeLayout({
     super.key,
     required this.child,

@@ -3,12 +3,12 @@ import 'package:flutter_clean_architecture/features/auth/domain/entities/auth_fa
 import 'package:flutter_clean_architecture/features/auth/domain/entities/user.dart';
 
 /// Template for Auth Repository interface following clean architecture
-/// 
+///
 /// This interface defines the contract for authentication operations.
 /// The actual implementation will be in the data layer.
 abstract class IAuthRepository {
   /// Attempts to sign in a user
-  /// 
+  ///
   /// Returns Either a User entity on success or an AuthFailure on error
   Future<Either<AuthFailure, User>> signIn({
     required String email,
